@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Background */
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #153677, #4e085f);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+/* App Card */
+.todo-app {
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    padding: 40px 30px 70px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Title */
+.app-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.app-title h2 {
+    color: #002765;
+}
+
+.app-title i {
+    font-size: 26px;
+    color: #002765;
+}
+
+/* Input Row */
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.row input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 14px 20px;
+    font-size: 16px;
+}
+
+.row button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 15px 45px;
+    background: #ff5945;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 30px;
+    transition: 0.25s ease;
+}
+
+.row button:hover {
+    filter: brightness(0.85);
+}
+
+/* Todo List */
+ul {
+    list-style: none;
+}
+
+ul li {
+    position: relative;
+    font-size: 17px;
+    padding: 12px 40px 12px 50px;
+    margin-top: 8px;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* Checkbox circle */
+ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 2px solid #ff5945;
+}
+
+/* Completed state */
+.list-container li.checked {
+    color: #777;              /* fallback text color */
+    text-decoration: line-through;
+}
+
+/* Target the <i> inside li.checked */
+.list-container li.checked i {
+    color: #8b1111;
+    text-decoration: line-through;
+}
+.list-container li.checked::before {
+    content: '';               /* MUST have content */
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 8px;
+    background: #ff5945;
+    border-radius: 50%;
+}
+/* Delete icon */
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555555;
+    font-size: 20px;
+    transition: 0.2s ease;
+}
+
+ul li span:hover {
+    background: #c9c9c9;
+    color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 400px) {
+    .row button {
+        padding: 15px;
+        border-radius: 0 30px 30px 0;
+    }
+}
