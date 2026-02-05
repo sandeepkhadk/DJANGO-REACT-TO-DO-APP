@@ -72,7 +72,7 @@ python manage.py migrate
 python manage.py runserver
 ```
 
-###Frontend (React)
+### Frontend (React)
 
 1. **Navigate to frontend folder:**
 
