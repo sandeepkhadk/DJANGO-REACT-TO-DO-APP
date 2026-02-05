@@ -32,7 +32,8 @@ Users can add, view, and manage tasks in a simple and intuitive interface.
 ---
 
 ## Project Structure
-DJANGO-REACT-TO-DO/
+
+DJANGO-REACT-TO-DO
 
 
 <img width="307" height="664" alt="image" src="https://github.com/user-attachments/assets/5222615f-dde1-47a1-9e47-798ccb1ba7c9" />
