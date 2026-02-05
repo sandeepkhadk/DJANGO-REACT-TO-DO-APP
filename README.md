@@ -33,32 +33,8 @@ Users can add, view, and manage tasks in a simple and intuitive interface.
 
 ## Project Structure
 DJANGO-REACT-TO-DO/
-│
-├── backend/ # Django backend
-│ ├── backend/ # Backend project folder
-│ ├── todo/ # Django app for Todo
-│ ├── users/ # Django app for users/auth
-│ ├── manage.py
-│ └── db.sqlite3
-│
-├── frontend/ # React frontend
-│ ├── public/
-│ │ └── index.html
-│ ├── src/
-│ │ ├── components/
-│ │ │ ├── LoginForm.jsx
-│ │ │ ├── RegisterForm.jsx
-│ │ │ └── Todo.jsx
-│ │ ├── App.jsx
-│ │ ├── App.css
-│ │ ├── index.js
-│ │ ├── index.css
-│ │ ├── reportWebVitals.js
-│ │ └── setupTests.js
-│ ├── package.json
-│ └── package-lock.json
-│
-└── README.md
+<img width="307" height="664" alt="image" src="https://github.com/user-attachments/assets/5222615f-dde1-47a1-9e47-798ccb1ba7c9" />
+
 
 ---
 
